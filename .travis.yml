@@ -3,7 +3,9 @@ language: go
 
 sudo: required
 
-install: ./script/install-libgit2.sh
+install: 
+	./script/install-libgit2.sh
+	go get github.com/libgit2/git2go
 
 go:
   - 1.4
