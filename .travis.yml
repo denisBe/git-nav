@@ -9,4 +9,10 @@ go:
 
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y libgit2-dev
+  - sudo apt-get install -y libgit2
+
+notifications:
+  slack:
+    on_success: never
+    on_failure: never
+
